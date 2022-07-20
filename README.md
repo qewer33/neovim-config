@@ -1,0 +1,1 @@
+My personal Neovim configuration. Minimal setup with Gruvbox as the syntax theme. Mainly for Rust development.

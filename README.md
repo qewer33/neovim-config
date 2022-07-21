@@ -6,8 +6,7 @@ My personal Neovim configuration. Minimal setup with Gruvbox as the syntax theme
 
 ### Custom Keybindings
 
-|                       Navigation                      |
-|--------------|----------|-----------------------------|
+#### Navigation
 | Keys         | Command  | Function                    |
 |--------------|----------|-----------------------------|
 | Ctrl + Up    | {        | Move up by paragraph        |
@@ -20,15 +19,13 @@ My personal Neovim configuration. Minimal setup with Gruvbox as the syntax theme
 | Alt + Left   | F<space> | Move to previous whitespace |
 | Shift + Up   | ddkP     | Move line up                |
 
-|                                Editing                               |
-|------------|---------|-----------------------------------------------|
+#### Editing
 | Keys       | Command | Function                                      |
 |------------|---------|-----------------------------------------------|
 | Leader + s | viw     | Visual delect word under cursor               |
 | Leader + d | viwdi   | Delete word under cursor and switch to insert |
 
-|                                 Telescope                                 |
-|-------------|-----------------------------|-------------------------------|
+#### Telescope
 | Keys        | Command                     | Function                      |
 |-------------|-----------------------------|-------------------------------|
 | Leader + ff | lua telescope.find\_files() | Open Telescope file finder    |
@@ -36,8 +33,7 @@ My personal Neovim configuration. Minimal setup with Gruvbox as the syntax theme
 | Leader + fb | lua telescope.buffers()     | Open Telescope buffers menu   |
 | Leader + fh | lua telescope.help\_tags()  | Open Telescope help tags menu |
 
-|                      NvimTree                      |
-|------------|----------------|----------------------|
+#### NvimTree
 | Keys       | Command        | Function             |
 <------------|----------------|----------------------|
 | Leader + o | NvimTreeToggle | Toggle the Nvim tree |

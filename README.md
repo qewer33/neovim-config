@@ -6,11 +6,10 @@ My personal Neovim configuration. Minimal setup with Gruvbox as the syntax theme
 
 ### Custom Keybindings
 
-+-------------------------------------------------------+
 |                       Navigation                      |
-+--------------+----------+-----------------------------+
+|--------------|----------|-----------------------------|
 | Keys         | Command  | Function                    |
-+--------------+----------+-----------------------------+
+|--------------|----------|-----------------------------|
 | Ctrl + Up    | {        | Move up by paragraph        |
 | Ctrl + Down  | }        | Move down by pargraph       |
 | Ctrl + Right | w        | Move right by word          |
@@ -20,33 +19,25 @@ My personal Neovim configuration. Minimal setup with Gruvbox as the syntax theme
 | Alt + Right  | f<space> | Move to next whitespace     |
 | Alt + Left   | F<space> | Move to previous whitespace |
 | Shift + Up   | ddkP     | Move line up                |
-| Shift + Down | ddp      | Move line down              |
-+--------------+----------+-----------------------------+
 
-+----------------------------------------------------------------------+
 |                                Editing                               |
-+------------+---------+-----------------------------------------------+
+|------------|---------|-----------------------------------------------|
 | Keys       | Command | Function                                      |
-+------------+---------+-----------------------------------------------+
+|------------|---------|-----------------------------------------------|
 | Leader + s | viw     | Visual delect word under cursor               |
 | Leader + d | viwdi   | Delete word under cursor and switch to insert |
-+------------+---------+-----------------------------------------------+
 
-+--------------------------------------------------------------------------+
-|                                 Telescope                                |
-+-------------+----------------------------+-------------------------------+
-| Keys        | Command                    | Function                      |
-+-------------+----------------------------+-------------------------------+
+|                                 Telescope                                 |
+|-------------|-----------------------------|-------------------------------|
+| Keys        | Command                     | Function                      |
+|-------------|-----------------------------|-------------------------------|
 | Leader + ff | lua telescope.find\_files() | Open Telescope file finder    |
 | Leader + fg | lua telescope.live\_grep()  | Open Telescope live grep      |
-| Leader + fb | lua telescope.buffers()    | Open Telescope buffers menu   |
+| Leader + fb | lua telescope.buffers()     | Open Telescope buffers menu   |
 | Leader + fh | lua telescope.help\_tags()  | Open Telescope help tags menu |
-+-------------+----------------------------+-------------------------------+
 
-+----------------------------------------------------+
 |                      NvimTree                      |
-+------------+----------------+----------------------+
+|------------|----------------|----------------------|
 | Keys       | Command        | Function             |
-+------------+----------------+----------------------+
+<------------|----------------|----------------------|
 | Leader + o | NvimTreeToggle | Toggle the Nvim tree |
-+------------+----------------+----------------------+

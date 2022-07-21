@@ -35,5 +35,5 @@ My personal Neovim configuration. Minimal setup with Gruvbox as the syntax theme
 
 #### NvimTree
 | Keys       | Command        | Function             |
-<------------|----------------|----------------------|
+|------------|----------------|----------------------|
 | Leader + o | NvimTreeToggle | Toggle the Nvim tree |

@@ -13,6 +13,8 @@ return require('packer').startup(function()
     use 'simrat39/rust-tools.nvim'
     use 'nvim-lua/plenary.nvim'
     use 'mfussenegger/nvim-dap'
+    use 'hrsh7th/vim-vsnip'
+    use 'hrsh7th/vim-vsnip-integ'
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }

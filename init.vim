@@ -1,6 +1,6 @@
-source keybinds.vim
-
 let mapleader = " "
+
+source ~/.config/nvim/keybinds.vim
 
 set mouse=a
 set number
@@ -12,11 +12,14 @@ set expandtab
 set background=dark
 colorscheme gruvbox
 
+hi NonText guifg=bg
+
 lua << END
 require('plugins')
 require('lsp')
 require('trim').setup({})
 require('rust-tools').setup({})
+require("nvim-tree").setup()
 require('nvim-autopairs').setup {}
 require('lualine').setup {
     options = {

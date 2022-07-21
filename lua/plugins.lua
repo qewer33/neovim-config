@@ -30,4 +30,8 @@ return require('packer').startup(function()
       },
       tag = 'nightly'
     }
+    use {
+      'romgrk/barbar.nvim',
+      requires = {'kyazdani42/nvim-web-devicons'}
+    }
 end)

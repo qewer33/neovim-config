@@ -12,6 +12,11 @@ nnoremap <S-Down> ddp
 " Editing
 nnoremap <leader>s viw
 nnoremap <leader>d viwdi
+nnoremap <leader>y "+y
+nnoremap <leader>p "+p
+" Buffers
+nnoremap <leader>w <C-w>w
+nnoremap <leader>t <cmd>belowright split \| terminal<cr> <cmd>resize 10<cr>
 " Telescope
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>

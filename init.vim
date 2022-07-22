@@ -8,20 +8,21 @@ set relativenumber
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set fillchars=eob:.
 
 set background=dark
 colorscheme gruvbox
 
-hi NonText guifg=bg
+hi EndOfBuffer guifg=bg
 hi VertSplit guifg=bg
 hi NvimTreeNormal guibg=#3c3836
 
 lua << END
 require('plugins')
 require('lsp')
-require('trim').setup({})
-require('rust-tools').setup({})
-require("nvim-tree").setup()
+require('trim').setup {}
+require('rust-tools').setup {}
+require("nvim-tree").setup {}
 require('nvim-autopairs').setup {}
 require('lualine').setup {
     options = {
@@ -30,12 +31,17 @@ require('lualine').setup {
         section_separators = '',
     }
 }
-require'bufferline'.setup {
+require('bufferline').setup {
   icon_separator_active = '',
   icon_separator_inactive = '',
   icon_close_tab = '',
   icon_close_tab_modified = '●',
   icon_pinned = '車',
+}
+require("indent_blankline").setup {
+    space_char_blankline = " ",
+    show_current_context = true,
+    show_current_context_start = true,
 }
 
 local nvim_tree_events = require('nvim-tree.events')

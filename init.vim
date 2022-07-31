@@ -23,7 +23,24 @@ require('plugins')
 require('lsp')
 require('trim').setup {}
 require('rust-tools').setup {}
-require("nvim-tree").setup {}
+require("nvim-tree").setup {
+    renderer = {
+        indent_markers = {
+            enable = true,
+        },
+        icons = {
+            glyphs = {
+                folder = {
+                    arrow_closed = "",
+                    arrow_open = "",
+                }
+            }
+        }
+    },
+    diagnostics = {
+        enable = true,
+    },
+}
 require('nvim-autopairs').setup {}
 require('lualine').setup {
     options = {

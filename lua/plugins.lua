@@ -17,6 +17,7 @@ return require('packer').startup(function()
     use 'mfussenegger/nvim-dap'
     use "lukas-reineke/indent-blankline.nvim"   -- Indent guides
     use 'wfxr/minimap.vim'                      -- Minimap
+    use 'rust-lang/rust.vim'
     use {                                       -- Lualine for the statusline
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }

@@ -2,6 +2,7 @@ let mapleader = " "
 
 source ~/.config/nvim/keybinds.vim
 
+set guifont=JetBrains\ Mono:h9
 set mouse=a
 set number
 set relativenumber

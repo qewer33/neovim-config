@@ -12,18 +12,23 @@ set expandtab
 set fillchars=eob:.
 
 set background=dark
-colorscheme gruvbox
 
 hi EndOfBuffer guifg=bg
 hi VertSplit guifg=bg
-hi NvimTreeNormal guibg=#3c3836
 
 lua << END
 require('plugins')
 require('lsp')
+
+-- Plugin Setups
+require('onedark').setup {
+    style = 'warm'
+}
+require('onedark').load()
 require('trim').setup {}
 require('rust-tools').setup {}
 require("nvim-tree").setup {
+    open_on_setup = true,
     renderer = {
         indent_markers = {
             enable = true,
@@ -44,7 +49,7 @@ require("nvim-tree").setup {
 require('nvim-autopairs').setup {}
 require('lualine').setup {
     options = {
-        theme  = 'gruvbox',
+        theme  = 'onedark',
         component_separators = '',
         section_separators = '',
     }
@@ -66,7 +71,7 @@ local nvim_tree_events = require('nvim-tree.events')
 local bufferline_state = require('bufferline.state')
 
 local function get_tree_size()
-  return 30
+    return vim.api.nvim_win_get_width(0)+1
 end
 
 nvim_tree_events.on_tree_open(function()
@@ -82,3 +87,5 @@ nvim_tree_events.on_tree_close(function()
 end)
 
 END
+
+hi BufferTabpageFill guibg=#242628
